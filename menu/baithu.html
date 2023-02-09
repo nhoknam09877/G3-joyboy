@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+     crossorigin="anonymous">
+     <script src="js.js"></script>
+     <link rel="stylesheet" href="css.css">
+
+    <title>AngularJs CRUD data JSON file</title>
+    <h1>AngularJs CRUD data JSON file</h1>
+</head>
+<body>
+    <br/>
+   >
+    <div class="form">
+        <div class="usr"><a href="#">User List</a></div>
+     <div ng-app="App" ng-controller="ContactController">
+        
+       
+        <form class="well">
+           
+            <label >Name</label><br>
+            <input type="text" name="name" id="name" ng-model="newcontact.name" placeholder="Enter Name"/><br>
+
+            <label >Email</label><br>
+            <input type="text" name="email" id="email" ng-model="newcontact.email" placeholder="Enter Email"/><br>
+            <label >Password </label><br>
+            <input type="text" id="password" ng-model="newcontact.search" placeholder="Enter Password"> <br>
+            <label >Phone</label><br>
+            <input type="text" name="phone" id="phone" ng-model="newcontact.phone" placeholder="Enter Phone"/>
+            <br>
+            <p id="errorMessage"></p>
+            <br>
+            <input type="button" value="submit" onclick="saveContact()" class="btn btn-primary"><br>
+            
+        
+        </form>
+        
+     </div>
+    </div>
+    
+</body>
+
+<script>
+function saveContact() {
+    var phone = document.getElementById("name").value;
+    // input check
+    if (phone !== "nam") {
+        document.getElementById("errorMessage").innerHTML = "M ko phai Nam";
+    
+        }}
+</script>
+</html>

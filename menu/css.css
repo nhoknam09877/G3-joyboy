@@ -1,0 +1,24 @@
+
+
+
+.usr{ 
+    padding-left: 70%;
+}
+.form{
+    background-color:white;
+    width: 300px;
+    margin:auto;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px solid chocolate;
+    padding: 30px ;
+    
+   
+
+}
+input{
+    width: 240Px;
+    height: 50px;
+    border-radius: 5px;
+}
+
